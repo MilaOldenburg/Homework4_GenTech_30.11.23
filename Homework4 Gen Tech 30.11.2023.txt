@@ -1,0 +1,30 @@
+
+Main сlass: General Tech
+
+Описание задания.
+
+1.Вывести название и стоимость в USD одного самого дорогого проданного товара
+SELECT product_name, price_usd
+FROM products
+ORDER BY price_usd DESC
+LIMIT 1;
+
+2.Вывести два самых дорогих товара из категории Beverages из USA
+SELECT product_name, price_usd
+FROM products
+WHERE category = 'Beverages' AND country_of_origin = 'USA'
+ORDER BY price_usd DESC
+LIMIT 2;
+
+3.Вывести список стран, которые поставляют морепродукты
+
+SELECT DISTINCT country_of_origin
+FROM products
+WHERE category = 'Seafood';
+
+
+
+
+
+
+
